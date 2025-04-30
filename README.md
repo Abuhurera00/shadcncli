@@ -1,8 +1,6 @@
-# registry-template
+# AccelratedUi
 
-You can use the `shadcn` CLI to run your own component registry. Running your own
-component registry allows you to distribute your custom components, hooks, pages, and
-other files to any React project.
+The accelerated-ui uses the `shadcn` CLI to integrate component to your codebase.
 
 > [!IMPORTANT]  
 > This template uses Tailwind v3. For Tailwind v4, see [registry-template](https://github.com/shadcn-ui/registry-template-v4).
