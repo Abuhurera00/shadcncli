@@ -34,7 +34,7 @@ export default function Home() {
             <h2 className="text-sm text-muted-foreground sm:pl-3">
               A Sign Up form with Zod validation.
             </h2>
-            <OpenInV0Button name="example-form" className="w-fit" />
+            <OpenInV0Button name="signup-form" className="w-fit" />
           </div>
           <div className="flex items-center justify-center min-h-[500px] relative">
             <SignUpForm />
