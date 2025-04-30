@@ -12,7 +12,7 @@ export const ExpandButton = () => {
             >
                 <div className="bg-lime-200 flex items-center gap-1 p-2 rounded-md">
                     <Globe className="w-5 h-5 stroke-zinc-600" />
-                    <span>FluxoUi</span>
+                    <span>AcceleratedUI</span>
                 </div>
                 <div
                     className="shadow-md bg-lime-200 absolute bottom-0 translate-y-1/2 left-1/2 translate-x-full rotate-45 p-1"

@@ -7,12 +7,10 @@ import {
   CardHeader,
   CardDescription,
   CardContent,
-  CardFooter,
 } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import { Textarea } from "@/components/ui/textarea"
 import { z } from "zod"
 
 const exampleFormSchema = z.object({
@@ -72,8 +70,8 @@ export function SignUpForm() {
           Sign Up with your Apple or Google account
         </CardDescription>
       </CardHeader>
-      <form onSubmit={handleSubmit}>
-        <CardContent>
+      <CardContent>
+        <form onSubmit={handleSubmit}>
           <div className="grid gap-6">
             <div className="flex flex-col gap-4">
               <Button variant="outline" className="w-full">
@@ -116,7 +114,7 @@ export function SignUpForm() {
                   id="name"
                   name="name"
                   placeholder="Lee Robinson"
-                  className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive"
+                  className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] transition-all duration-300"
                   disabled={pending}
                   aria-invalid={!!state.errors?.name}
                   aria-errormessage="error-name"
@@ -145,7 +143,7 @@ export function SignUpForm() {
                   id="email"
                   name="email"
                   placeholder="leerob@acme.com"
-                  className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive"
+                  className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] transition-all duration-300"
                   disabled={pending}
                   aria-invalid={!!state.errors?.email}
                   aria-errormessage="error-email"
@@ -179,7 +177,7 @@ export function SignUpForm() {
                   id="password"
                   name="password"
                   placeholder="Type your password here..."
-                  className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive"
+                  className="group-data-[invalid=true]/field:border-destructive focus-visible:group-data-[invalid=true]/field:ring-destructive focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] transition-all duration-300"
                   disabled={pending}
                   aria-invalid={!!state.errors?.password}
                   aria-errormessage="error-password"
@@ -196,15 +194,15 @@ export function SignUpForm() {
                 {pending ? "Signing Up..." : "Sign Up"}
               </Button>
             </div>
-          <div className="text-center text-sm">
-            Don&apos;t have an account?{" "}
-            <a href="#" className="underline underline-offset-4">
-              Sign up
-            </a>
+            <div className="text-center text-sm">
+              Don&apos;t have an account?{" "}
+              <a href="#" className="underline underline-offset-4">
+                Sign up
+              </a>
+            </div>
           </div>
-          </div>
-        </CardContent>
-      </form>
+        </form>
+      </CardContent>
     </Card>
   )
 }

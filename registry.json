@@ -4,21 +4,6 @@
   "homepage": "https://acme.com",
   "items": [
     {
-      "name": "hello-world",
-      "type": "registry:component",
-      "title": "Hello World",
-      "description": "A simple hello world component",
-      "registryDependencies": [
-        "button"
-      ],
-      "files": [
-        {
-          "path": "registry/new-york/hello-world/hello-world.tsx",
-          "type": "registry:component"
-        }
-      ]
-    },
-    {
       "name": "signup-form",
       "type": "registry:component",
       "title": "signUp Form",
@@ -47,12 +32,24 @@
       "dependencies": [
         "lucide-react"
       ],
-      "registryDependencies": [
-        "button"
-      ],
       "files": [
         {
           "path": "registry/new-york/expand-button/expand-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
+      "name": "slide-tabs",
+      "type": "registry:component",
+      "title": "Slide Tabs",
+      "description": "Slide Tab components which gives smooth hovering.",
+      "dependencies": [
+        "framer-motion"
+      ],
+      "files": [
+        {
+          "path": "registry/new-york/slide-tabs/slide-tabs.tsx",
           "type": "registry:component"
         }
       ]
